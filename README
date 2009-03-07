@@ -8,7 +8,10 @@ This is cjb's awesome and super-portable Emacs setup. You should nearly just be 
 
 3. Change cjb-load-path variable in load-path-config.el to point to location of config folder
 
---If...
+If...
 ...you want Python, 
        1. run 'python setup.py install' from the PyMacs directory
        2. run 'python setup.py install' from the rope directory
+       3. run 'python setup.py install' from the ropemacs directory
+       4. I should probably make a script that can do this...
+       5. Bask in the glory

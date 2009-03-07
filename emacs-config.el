@@ -7,7 +7,7 @@
 (require 'visuals-config)
 (require 'js2-mode-config)
 (require 'auto-complete-config)
-(require 'pymacs-config)
+(require 'python-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
