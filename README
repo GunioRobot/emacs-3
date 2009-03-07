@@ -1,4 +1,4 @@
-This is cjb's awesome and super-portable Emacs setup. You should just be able to slap it in your home directory and rock. There are just a couple of setup steps:
+This is cjb's awesome and super-portable Emacs setup. You should nearly just be able to slap it in your home directory and rock. There are just a couple of setup steps:
 
 1. Create a .emacs that has the following two lines:
    (add-to-list 'load-path <<LOCATION OF EMACS DIR>>)
@@ -11,3 +11,4 @@ This is cjb's awesome and super-portable Emacs setup. You should just be able to
 --If...
 ...you want Python, 
        1. run 'python setup.py install' from the PyMacs directory
+       2. run 'python setup.py install' from the rope directory
