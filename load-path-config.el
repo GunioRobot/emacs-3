@@ -12,4 +12,6 @@
 
 (add-to-list 'load-path (concat cjb-load-path "pymacs"))
 
+(add-to-list 'load-path (concat cjb-load-path "nav"))
+
 (provide 'load-path-config)

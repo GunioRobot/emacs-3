@@ -8,6 +8,7 @@
 (require 'js2-mode-config)
 (require 'auto-complete-config)
 (require 'python-config)
+;(require 'nav-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
