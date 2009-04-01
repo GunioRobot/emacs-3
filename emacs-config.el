@@ -9,6 +9,7 @@
 (require 'auto-complete-config)
 (require 'python-config)
 ;(require 'nav-config)
+(require 'nxml-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
