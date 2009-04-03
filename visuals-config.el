@@ -5,9 +5,12 @@
 (menu-bar-mode -1)
 (require 'zenburn)
 (zenburn)
-(set-default-font "-microsoft-Consolas-normal-normal-normal-*-21-*-*-*-m-0-iso10646-1")
+;(set-default-font "-microsoft-Consolas-normal-normal-normal-*-21-*-*-*-m-0-iso10646-1")
 (setq initial-frame-alist
           '((top . 50) (left . 100) (width . 90) (height . 30)))
 
+;transparent emacs!!1!!1!one!! dunno if this works on windows
+(set-frame-parameter (selected-frame) 'alpha '(90 100))
+(add-to-list 'default-frame-alist '(alpha 90 100))
 
 (provide 'visuals-config)
