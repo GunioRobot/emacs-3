@@ -3,8 +3,12 @@
 ;(scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(require 'zenburn)
-(zenburn)
+;(require 'zenburn)
+;(zenburn)
+(require 'color-theme)
+(require 'vivid-chalk)
+(vivid-chalk)
+
 ;(set-default-font "-microsoft-Consolas-normal-normal-normal-*-21-*-*-*-m-0-iso10646-1")
 (setq initial-frame-alist
           '((top . 50) (left . 100) (width . 90) (height . 30)))

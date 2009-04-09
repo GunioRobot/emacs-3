@@ -4,7 +4,7 @@
 (global-auto-complete-mode t)
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
-(setq ac-auto-start nil)
+(setq ac-auto-start 3)
 (global-set-key "\M-/" 'ac-start)
 (define-key ac-complete-mode-map "\M-/" 'ac-stop)
 
