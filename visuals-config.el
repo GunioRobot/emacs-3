@@ -9,7 +9,8 @@
 (require 'vivid-chalk)
 (vivid-chalk)
 
-;(set-default-font "-microsoft-Consolas-normal-normal-normal-*-21-*-*-*-m-0-iso10646-1")
+;(set-default-font "Consolas-14")
+(set-default-font "-microsoft-Consolas-normal-normal-normal-*-21-*-*-*-m-0-iso10646-1")
 (setq initial-frame-alist
           '((top . 50) (left . 100) (width . 90) (height . 30)))
 
