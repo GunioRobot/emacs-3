@@ -20,6 +20,7 @@
 (setq make-backup-files nil)
 (put 'narrow-to-region 'disabled nil)
 (add-hook 'speedbar-mode-hook 'speedbar-toggle-show-all-files)
-(iswitchb-mode)
+(iswitchb-mode 1)
+(add-hook 'before-save-hook 'time-stamp)
 
 (provide 'emacs-config)
