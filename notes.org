@@ -1,0 +1,6 @@
+* emacs sticky notes
+  - with transient mark mode, TAB indents highlit region
+  - M-! is shell command
+  - 'mkdir' now, not 'make-directory'
+  - proced
+
