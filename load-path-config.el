@@ -14,4 +14,6 @@
 
 (add-to-list 'load-path (concat cjb-load-path "nav"))
 
+(add-to-list 'load-path (concat cjb-load-path "yasnippet"))
+
 (provide 'load-path-config)

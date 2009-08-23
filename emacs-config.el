@@ -6,10 +6,11 @@
 (require 'org-config)
 (require 'visuals-config)
 (require 'js2-mode-config)
-(require 'auto-complete-config)
-(require 'python-config)
+;(require 'auto-complete-config)
+;(require 'python-config)
 ;(require 'nav-config)
 (require 'nxml-config)
+(require 'yasnippet-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
@@ -21,7 +22,7 @@
 (setq make-backup-files nil)
 (put 'narrow-to-region 'disabled nil)
 (add-hook 'speedbar-mode-hook 'speedbar-toggle-show-all-files)
-(iswitchb-mode 1)
+(ido-mode t)
 (add-hook 'before-save-hook 'time-stamp)
 (set-variable 'help-window-select t)
 (set-variable 'delete-by-moving-to-trash t)

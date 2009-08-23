@@ -3,4 +3,11 @@
   - M-! is shell command
   - 'mkdir' now, not 'make-directory'
   - proced
-
+  - M-m goes to beginning of text on indented line (nice!)
+** ido-mode rules
+   - when in buffer menu, C-f goes to files menu (C-b to buffer when in file menu)
+   - C-s cycles menu through visible choices
+   - Enter selects current file/buffer, or goes down into current folder
+   - backspace hops up a directory level
+   - C-j creates new file/buffer matching text you entered (in case it also matches something)
+   - there's more to it than this, but these are the basics
