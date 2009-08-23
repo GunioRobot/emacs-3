@@ -9,7 +9,7 @@
 (global-set-key [?\C-6] 'vi-mode)
 (global-set-key [?\M-p] 'down-one)
 (global-set-key [?\M-n] 'up-one)
-
+(global-set-key [?\M-/] 'hippie-expand)
 
 
 (defun up-one ()
