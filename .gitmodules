@@ -1,3 +1,6 @@
 [submodule "org-mode"]
 	path = org-mode
 	url = git://repo.or.cz/org-mode.git
+[submodule "pymacs"]
+	path = pymacs
+	url = git://pymacs.progiciels-bpi.ca/pymacs
