@@ -28,7 +28,7 @@
 (add-hook 'before-save-hook 'time-stamp)
 (set-variable 'help-window-select t)
 (set-variable 'delete-by-moving-to-trash t)
-
+(show-paren-mode 1)
 
 ;attempt to get MacPorts bins recognized
 (setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin"))
