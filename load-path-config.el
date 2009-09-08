@@ -16,4 +16,6 @@
 
 (add-to-list 'load-path (concat cjb-load-path "yasnippet"))
 
+(add-to-list 'load-path (concat cjb-load-path "cygwin"))
+
 (provide 'load-path-config)

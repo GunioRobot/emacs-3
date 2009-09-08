@@ -11,6 +11,7 @@
 ;(require 'nav-config)
 (require 'nxml-config)
 (require 'yasnippet-config)
+;(require 'cygwin-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
