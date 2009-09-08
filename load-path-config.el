@@ -1,3 +1,4 @@
+
 ;; update the load-path with all the folders for extra packages
 (defvar cjb-load-path "~/emacs/")
 
