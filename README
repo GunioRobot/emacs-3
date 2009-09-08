@@ -1,4 +1,4 @@
-This is cjb's awesome and super-portable Emacs setup. You should nearly just be able to slap it in your home directory and rock. There are just a couple of setup steps:
+This is cjb's awesome and reasonably portable Emacs setup. You should nearly just be able to slap it in your home directory and rock. There are just a couple of setup steps:
 
 1. Create a .emacs that has the following two lines:
    (add-to-list 'load-path <<LOCATION OF EMACS DIR>>)
@@ -8,10 +8,25 @@ This is cjb's awesome and super-portable Emacs setup. You should nearly just be 
 
 3. Change cjb-load-path variable in load-path-config.el to point to location of config folder
 
+4. Check out emacs-config.el for the main config file...you can use this to turn on/off stuff you want.
+
+
+
 If...
+...you want org-mode,
+       1. cd to emacs folder
+       2. git submodule init
+       3. git submodule update
+
 ...you want Python, 
-       1. run 'python setup.py install' from the PyMacs directory
-       2. run 'python setup.py install' from the rope directory
-       3. run 'python setup.py install' from the ropemacs directory
-       4. I should probably make a script that can do this...
-       5. Bask in the glory
+       0. rm -rf pymacs
+       1. git submodule update
+       2. run 'python setup.py install' from the PyMacs directory
+       3. run 'python setup.py install' from the rope directory
+       4. run 'python setup.py install' from the ropemacs directory
+       5. I should probably make a script that can do this...
+       6. Bask in the glory
+
+
+
+Yeah, I know I need to make some kind of script that takes care of setup for different platforms and whatnot. I'll do it someday...
