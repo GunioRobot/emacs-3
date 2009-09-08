@@ -12,6 +12,7 @@
 (require 'nxml-config)
 (require 'yasnippet-config)
 ;(require 'cygwin-config)
+(require 'magit-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
@@ -27,5 +28,10 @@
 (add-hook 'before-save-hook 'time-stamp)
 (set-variable 'help-window-select t)
 (set-variable 'delete-by-moving-to-trash t)
+
+
+;attempt to get MacPorts bins recognized
+(setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin"))
+(setq exec-path (append exec-path '("/opt/local/bin")))
 
 (provide 'emacs-config)

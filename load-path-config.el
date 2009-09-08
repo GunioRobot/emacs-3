@@ -18,4 +18,6 @@
 
 (add-to-list 'load-path (concat cjb-load-path "cygwin"))
 
+(add-to-list 'load-path (concat cjb-load-path "magit"))
+
 (provide 'load-path-config)
