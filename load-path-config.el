@@ -5,7 +5,7 @@
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (add-to-list 'load-path (concat cjb-load-path "color-theme/themes"))
 
-(add-to-list 'load-path (concat cjb-load-path "org/lisp"))
+(add-to-list 'load-path (concat cjb-load-path "org-mode/lisp"))
 
 (add-to-list 'load-path (concat cjb-load-path "js2-mode"))
 
