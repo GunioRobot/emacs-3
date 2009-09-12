@@ -13,6 +13,9 @@
 (setq org-hide-leading-stars t)
 (global-set-key "\C-cr" 'org-remember)
 (add-to-list 'org-agenda-files org-directory)
+(setq org-cycle-include-plain-lists nil)
+(setq org-startup-indented t)
+
 
 
 (provide 'org-config)
