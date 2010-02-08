@@ -1,6 +1,6 @@
 ;; cjb's custom keybindings
 
-(global-set-key [?\C-xy] 'clipboard-yank)
+(global-set-key "\C-xy" 'clipboard-yank)
 (global-set-key [?\C-w] 'backward-kill-word)
 (global-set-key [?\C-\M-w] 'kill-region)
 (global-set-key [?\M-'] 'clipboard-kill-region)
