@@ -14,6 +14,7 @@
 ;(require 'cygwin-config)
 (require 'magit-config)
 (require 'dired-config)
+(require 'lilypond-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)

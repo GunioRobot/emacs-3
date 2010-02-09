@@ -10,7 +10,7 @@
 (global-set-key [?\M-p] 'down-one)
 (global-set-key [?\M-n] 'up-one)
 (global-set-key [?\M-/] 'hippie-expand)
-
+(global-set-key [?\C-x ?\C-b] 'buffer-menu-other-window)
 
 (defun up-one ()
  "idea taken from Tom Laudeman"

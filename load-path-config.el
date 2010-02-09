@@ -21,4 +21,6 @@
 
 (add-to-list 'load-path (concat cjb-load-path "magit"))
 
+(add-to-list 'load-path (concat cjb-load-path "lilypond"))
+
 (provide 'load-path-config)
