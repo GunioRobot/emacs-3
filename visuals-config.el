@@ -3,11 +3,11 @@
 ;(scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(require 'zenburn)
-(zenburn)
-;(require 'color-theme)
-;(require 'vivid-chalk)
-;(vivid-chalk)
+;(require 'zenburn)
+;(zenburn)
+(require 'color-theme)
+(require 'vivid-chalk)
+(vivid-chalk)
 
 (set-default-font "-apple-consolas-medium-r-normal--18-0-72-72-m-0-iso10646-1")
 ;(set-default-font "Consolas-12")
@@ -16,7 +16,7 @@
           '((top . 50) (left . 100) (width . 90) (height . 30)))
 
 ;transparent emacs!!1!!1!one!! dunno if this works on windows
-(set-frame-parameter (selected-frame) 'alpha '(100 70))
-(add-to-list 'default-frame-alist '(alpha 100 70))
+(set-frame-parameter (selected-frame) 'alpha '(90 70))
+(add-to-list 'default-frame-alist '(alpha 90 70))
 
 (provide 'visuals-config)

@@ -33,15 +33,5 @@
 (show-paren-mode 1)
 
 
-;for "edit with emacs" chrome extension
-(require 'edit-server)
-(edit-server-start)
-
-
-;attempt to get MacPorts bins recognized
-;;DEPRECATED because i don't use macports any more
-;;(setenv "PATH" (concat (getenv "PATH") ":/opt/local/bin"))
-;;(setq exec-path (append exec-path '("/opt/local/bin")))
-
 (provide 'emacs-config)
 
