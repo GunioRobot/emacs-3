@@ -1,30 +1,37 @@
 
 * emacs sticky notes
-  - with transient mark mode, TAB indents highlit region
-  - M-! is shell command
-  - 'mkdir' now, not 'make-directory'
-  - proced
-  - M-m goes to beginning of text on indented line (nice!)
-  - M-w   kill ring save (w/o kill)
-  - blink-matching-open
-  - C-x C-o   ==  delete-blank-lines (leaving just one)
+** misc
+- 'mkdir' now, not 'make-directory'
+- proced is awesome
+- M-m goes to beginning of text on indented line (nice!)
+- M-w kill ring save (w/o kill)
+- blink-matching-open
+- C-x C-o :: delete-blank-lines (leaving just one)
+- C-x i :: insert file contents at point
+** isearch
+- C-s :: duh
+- <RET> :: ends search at current point
+- C-g :: ends search and returns to starting point
+- C-w :: add word under cursor to the search string
 ** ido-mode rules
-   - when in buffer menu, C-f goes to files menu (C-b to buffer when in file menu)
-   - C-s cycles menu through visible choices
-   - Enter selects current file/buffer, or goes down into current folder
-   - backspace hops up a directory level
-   - C-j creates new file/buffer matching text you entered (in case it also matches something)
-   - there's more to it than this, but these are the basics
-
+- when in buffer menu, C-f goes to files menu (C-b to buffer when in file menu)
+- C-s cycles menu through visible choices
+- C-j creates new file/buffer matching text you entered (in case it also matches something)
+- there's more to it than this, but these are the basics
 ** macros where have you been all my life
-   - F3 / F4 == start / stop macro recording
-   - C-x C-k e    edit macro
-   - C-x C-k C-[p|n]   macro ring prev/next
-   - C-x C-k b    bind macro to key (capital letters and numbers)
-   - C-x C-k <<CHAR>>    execute macro bound to CHAR
-   - C-x C-k n    name macro
-   - C-x C-k C-v     view macro ring
+- F3 / F4 ::start / stop macro recording
+- C-x C-k e :: edit macro
+- C-x C-k C-[p|n] :: macro ring prev/next
+- C-x C-k b :: bind macro to key (capital letters and numbers)
+- C-x C-k <<CHAR>> :: execute macro bound to CHAR
+- C-x C-k n :: name macro
+- C-x C-k C-v :: view macro ring
 ** mark mode stuff
-   - C-SPC C-SPC    set mark
-   - C-x C-SPC    global pop mark
-   - C-u C-SPC    local pop mark
+- with transient mark mode, TAB indents highlit region
+- C-SPC C-SPC :: set mark
+- C-x C-SPC :: global pop mark
+- C-u C-SPC :: local pop mark
+** rectangles!
+- C-x r t :: rectangle replace text
+- C-x r k :: kill rectangle
+- C-x r c :: clear rectangle (replaces text with whitespace)
