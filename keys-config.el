@@ -11,6 +11,9 @@
 (global-set-key [?\M-n] 'up-one)
 (global-set-key [?\M-/] 'hippie-expand)
 (global-set-key [?\C-x ?\C-b] 'buffer-menu-other-window)
+(global-set-key [?\C-\M-t] 'text-mode)
+(global-set-key [?\C-\M-o] 'org-mode)
+
 
 (defun up-one ()
  "idea taken from Tom Laudeman"
