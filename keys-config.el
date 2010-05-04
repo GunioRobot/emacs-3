@@ -13,7 +13,7 @@
 (global-set-key [?\C-x ?\C-b] 'buffer-menu-other-window)
 (global-set-key [?\C-\M-t] 'text-mode)
 (global-set-key [?\C-\M-o] 'org-mode)
-
+(global-set-key (kbd "C-c s") 'swap-windows)
 
 (defun up-one ()
  "idea taken from Tom Laudeman"
