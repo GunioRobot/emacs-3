@@ -15,6 +15,10 @@
 (setq initial-frame-alist
           '((top . 50) (left . 100) (width . 90) (height . 30)))
 
+;highlight current line like a little bitch
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "gray16")
+
 ;transparent emacs!!1!!1!one!! 
 (defun djcb-opacity-modify (&optional dec)
   "modify the transparency of the emacs frame; if DEC is t,

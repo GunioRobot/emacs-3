@@ -11,6 +11,7 @@
 - C-M-t :: text-mode
 - C-M-o :: org-mode
 - C-c s :: swap-windows
+- C-c ^ :: org sort selection
 ** isearch
 - C-s :: duh
 - <RET> :: ends search at current point
