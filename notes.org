@@ -7,11 +7,14 @@
 - M-w kill ring save (w/o kill)
 - blink-matching-open
 - C-x C-o :: delete-blank-lines (leaving just one)
+- M-SPC :: delete all spaces but one
+- M-\ :: remove trailing whitespace on a line
 - C-x i :: insert file contents at point
 - C-M-t :: text-mode
 - C-M-o :: org-mode
 - C-c s :: swap-windows
 - C-c ^ :: org sort selection
+- M-r :: recenter point within the window (like C-l but for point)
 ** isearch
 - C-s :: duh
 - <RET> :: ends search at current point

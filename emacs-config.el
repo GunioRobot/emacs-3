@@ -31,6 +31,8 @@
 (set-variable 'help-window-select t)
 (set-variable 'delete-by-moving-to-trash t)
 (show-paren-mode 1)
+;I added this, but it doesn't seem to be working...
+(set-variable 'dired-auto-revert-buffer t)
 
 
 ;; blatantly stolen from Steve Yegge. What a smart guy.
