@@ -15,6 +15,7 @@
 - C-c s :: swap-windows
 - C-c ^ :: org sort selection
 - M-r :: recenter point within the window (like C-l but for point)
+- C-x C-t :: transpose lines (FUCK YES!!!)
 ** isearch
 - C-s :: duh
 - <RET> :: ends search at current point
@@ -42,3 +43,4 @@
 - C-x r t :: rectangle replace text
 - C-x r k :: kill rectangle
 - C-x r c :: clear rectangle (replaces text with whitespace)
+- C-x r y :: yank rectangle
