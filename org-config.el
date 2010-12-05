@@ -16,6 +16,7 @@
 (add-to-list 'org-agenda-files org-directory)
 (setq org-cycle-include-plain-lists nil)
 (setq org-startup-indented t)
+(setq org-clock-into-drawer t)
 
 (setq org-todo-keywords
       '((sequence "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELED")))
