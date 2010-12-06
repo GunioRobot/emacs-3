@@ -15,6 +15,8 @@
 (setq initial-frame-alist
           '((top . 50) (left . 100) (width . 90) (height . 30)))
 
+(set-cursor-color "DimGray")
+
 ;highlight current line like a little bitch
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "gray16")
