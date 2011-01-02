@@ -11,7 +11,7 @@ Modified by Phil Hagelberg to fix minor garishness."
      ((background-color . "black")
       (background-mode . dark)
       (border-color . "black")
-      (cursor-color . "white")
+      (cursor-color . "DimGray")
       (foreground-color . "white")
       (list-matching-lines-face . bold)
       (view-highlight-face . highlight))
