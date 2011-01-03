@@ -15,6 +15,7 @@
 (require 'magit-config)
 (require 'dired-config)
 (require 'lilypond-config)
+(require 'eshell-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)

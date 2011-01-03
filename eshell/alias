@@ -1,0 +1,3 @@
+alias emacsclient /Applications/Emacs.app/Contents/MacOS/bin/emacsclient
+alias ff find-file $1
+alias d dired $1
