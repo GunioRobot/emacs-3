@@ -16,6 +16,7 @@
 (require 'dired-config)
 (require 'lilypond-config)
 (require 'eshell-config)
+(require 'alarm)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
