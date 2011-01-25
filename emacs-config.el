@@ -17,6 +17,7 @@
 (require 'lilypond-config)
 (require 'eshell-config)
 (require 'alarm)
+(require 'markdown)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
