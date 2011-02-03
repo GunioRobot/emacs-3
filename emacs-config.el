@@ -37,6 +37,9 @@
 ;I added this, but it doesn't seem to be working...
 (set-variable 'dired-auto-revert-buffer t)
 
+;Edit With Emacs Chrome extension
+(require 'edit-server)
+(edit-server-start)
 
 ;; blatantly stolen from Steve Yegge. What a smart guy.
 (defun swap-windows ()
