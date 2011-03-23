@@ -18,6 +18,7 @@
 (require 'eshell-config)
 (require 'alarm)
 (require 'markdown-config)
+(require 'project-view)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
