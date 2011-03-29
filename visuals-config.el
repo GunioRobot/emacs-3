@@ -15,6 +15,10 @@
 (setq initial-frame-alist
           '((top . 50) (left . 100) (width . 90) (height . 30)))
 
+(add-to-list 'default-frame-alist '(font . "-apple-consolas-medium-r-normal--18-0-72-72-m-0-iso10646-1"))
+
+
+
 ;highlight current line like a little bitch
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "gray16")
