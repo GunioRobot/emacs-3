@@ -20,13 +20,17 @@
 (setq org-clock-modeline-total 'current)
 
 (setq org-todo-keywords
-      '((sequence "TODO" "STARTED" "WAITING" "|" "DONE" "CANCELED")))
+      '((sequence "ACTION" "|" "DONE")
+	(sequence "PROJECT" "WAITING" "|" "FINISHED" "CANCELED")
+	(sequence "TO_PLAY" "PLAYING" "|" "PLAYED" "CANCELED")
+	(sequence "BUY" "|" "BOUGHT")))
 
 (setq org-todo-keyword-faces
-      '(("STARTED" . (:foreground "yellow" :weight bold))
+      '(("PROJECT" . (:foreground "yellow" :weight bold))
         ("PLAYING" . (:foreground "yellow" :weight bold))
         ("CANCELED" . (:foreground "blue" :weight bold))
-        ("WAITING" . (:foreground "orange" :weight bold))))
+        ("WAITING" . (:foreground "orange" :weight bold))
+	("FINISHED" . (:foreground "aqua" :weight bold))))
 
 
 (provide 'org-config)
