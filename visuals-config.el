@@ -8,7 +8,7 @@
 (require 'color-theme)
 (require 'vivid-chalk)
 (vivid-chalk)
-(setq-default show-trailing-whitespace t)
+;(setq-default show-trailing-whitespace t)
 
 (set-default-font "-apple-consolas-medium-r-normal--18-0-72-72-m-0-iso10646-1")
 ;(set-default-font "Consolas-12")
