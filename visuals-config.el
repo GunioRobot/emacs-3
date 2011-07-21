@@ -49,6 +49,9 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
-
+;; make frame title have full file path
+(setq frame-title-format
+      (list (format "%s %%S: %%j " (system-name))
+	    '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
 (provide 'visuals-config)
