@@ -19,6 +19,7 @@
 (require 'alarm)
 (require 'markdown-config)
 (require 'project-view)
+(require 'wc)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
