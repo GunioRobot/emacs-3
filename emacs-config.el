@@ -63,6 +63,13 @@
            (set-window-start w2 s1))))
   (other-window 1))
 
+;;Add a '/' to the end of dired buffers, for easy ID later (e.g. in ido-mode)
+(add-hook 'dired-mode-hook 'ensure-buffer-name-ends-in-slash)
+(defun ensure-buffer-name-ends-in-slash ()
+  "change buffer name to end with slash"
+  (let ((name (buffer-name)))
+    (if (not (string-match "/$" name))
+        (rename-buffer (concat name "/") t))))
 
 (provide 'emacs-config)
 
