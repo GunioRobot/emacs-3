@@ -18,6 +18,7 @@
 (setq org-startup-indented t)
 (setq org-clock-into-drawer t)
 (setq org-clock-modeline-total 'current)
+(setq org-table-export-default-format "orgtbl-to-csv")
 (add-hook 'org-mode-hook (lambda() 
 			   (local-set-key (kbd "C-c C-`") 'org-table-edit-field)))
 
