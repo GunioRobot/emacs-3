@@ -20,6 +20,7 @@
 (require 'markdown-config)
 (require 'project-view)
 (require 'wc)
+(require 'gist)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
