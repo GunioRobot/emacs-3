@@ -14,7 +14,7 @@
 (global-set-key [?\C-\M-t] 'text-mode)
 (global-set-key [?\C-\M-o] 'org-mode)
 (global-set-key (kbd "C-c s") 'swap-windows)
-(global-set-key (kbd "C-c C-t") 'toggle-truncate-lines)
+(global-set-key (kbd "C-~") 'toggle-truncate-lines)
 
 (defun up-one ()
  "idea taken from Tom Laudeman"

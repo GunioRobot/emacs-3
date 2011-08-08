@@ -18,6 +18,8 @@
 (setq org-startup-indented t)
 (setq org-clock-into-drawer t)
 (setq org-clock-modeline-total 'current)
+(add-hook 'org-mode-hook (lambda() 
+			   (local-set-key (kbd "C-c C-`") 'org-table-edit-field)))
 
 (setq org-todo-keywords
       '((sequence "TODO" "STALLED" "|" "DONE" "CANCELED")
