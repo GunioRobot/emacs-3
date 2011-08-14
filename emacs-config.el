@@ -22,6 +22,7 @@
 (require 'wc)
 (require 'gist)
 (require 'abbrev-config)
+(require 'rainbow-mode)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
