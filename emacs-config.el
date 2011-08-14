@@ -39,6 +39,8 @@
 (show-paren-mode 1)
 ;I added this, but it doesn't seem to be working...
 (set-variable 'dired-auto-revert-buffer t)
+(setq mouse-wheel-scroll-amount '(1))
+(setq mouse-wheel-progressive-speed nil)
 
 ;Edit With Emacs Chrome extension
 (require 'edit-server)
