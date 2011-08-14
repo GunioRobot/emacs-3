@@ -21,6 +21,7 @@
 (require 'project-view)
 (require 'wc)
 (require 'gist)
+(require 'abbrev-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
