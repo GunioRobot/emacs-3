@@ -4,8 +4,8 @@
 
 
 ; hopefully tell magit where git actually is
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/git/bin")) 
-(setq exec-path (append exec-path '("/usr/local/git/bin"))) 
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin")) 
+(setq exec-path (append exec-path '("/usr/local/bin"))) 
 
 (require 'magit)
 
