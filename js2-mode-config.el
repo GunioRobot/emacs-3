@@ -4,7 +4,11 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq js2-mirror-mode nil)
 (require 'js-comint)
-(setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
+(setq inferior-js-program-command "node")
+(add-to-list 'comint-preoutput-filter-functions
+	     (lambda (output)
+	       (replace-regexp-in-string ".*1G\.\.\..*5G" "..."
+					 (replace-regexp-in-string ".*1G.*3G" "> " output))))
 (add-hook 'js2-mode-hook '(lambda () 
 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
