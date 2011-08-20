@@ -9,6 +9,7 @@
 	     (lambda (output)
 	       (replace-regexp-in-string ".*1G\.\.\..*5G" "..."
 					 (replace-regexp-in-string ".*1G.*3G" "> " output))))
+(add-hook 'comint-mode-hook 'ansi-color-for-comint-mode-on)
 (add-hook 'js2-mode-hook '(lambda () 
 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)

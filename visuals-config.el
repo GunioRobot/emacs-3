@@ -54,4 +54,9 @@
       (list (format "%s %%S: %%j " (system-name))
 	    '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
+;; fix garbage chars in comint mode output
+(autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
+(add-hook 'shell-mode-hook 
+          'ansi-color-for-comint-mode-on)
+
 (provide 'visuals-config)
