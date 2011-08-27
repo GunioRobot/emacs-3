@@ -23,6 +23,7 @@
 (require 'gist)
 (require 'abbrev-config)
 (require 'rainbow-mode)
+(require 'term-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
