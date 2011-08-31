@@ -188,29 +188,29 @@ specified, then make `org-toc-recenter' use this value."
   (interactive)
   (let ((beg (point))
 	(end (save-excursion (end-of-line) (point)))
-	(ov (car (org-overlays-at (point))))
+	(ov (car (overlays-at (point))))
 	status)
-    (if ov (setq status (org-overlay-get ov 'status))
-      (setq ov (org-make-overlay beg end)))
+    (if ov (setq status (overlay-get ov 'status))
+      (setq ov (make-overlay beg end)))
     ;; change the folding status of this headline
     (cond ((or (null status) (eq status 'folded))
 	   (show-children)
 	   (message "CHILDREN")
-	   (org-overlay-put ov 'status 'children))
+	   (overlay-put ov 'status 'children))
 	  ((eq status 'children)
 	   (show-branches)
 	   (message "BRANCHES")
-	   (org-overlay-put ov 'status 'branches))
+	   (overlay-put ov 'status 'branches))
 	  (t (hide-subtree)
 	     (message "FOLDED")
-	     (org-overlay-put ov 'status 'folded)))))
+	     (overlay-put ov 'status 'folded)))))
 
 ;;; Main show function:
 ;; FIXME name this org-before-first-heading-p?
 (defun org-toc-before-first-heading-p ()
   "Before first heading?"
   (save-excursion
-    (null (re-search-backward "^\\*+ " nil t))))
+    (null (re-search-backward org-outline-regexp-bol nil t))))
 
 ;;;###autoload
 (defun org-toc-show (&optional depth position)
@@ -220,13 +220,13 @@ specified, then make `org-toc-recenter' use this value."
       (progn (setq org-toc-base-buffer (current-buffer))
 	     (setq org-toc-odd-levels-only org-odd-levels-only))
     (if (eq major-mode 'org-toc-mode)
-	(switch-to-buffer org-toc-base-buffer)
+	(org-pop-to-buffer-same-window org-toc-base-buffer)
       (error "Not in an Org buffer")))
   ;; create the new window display
   (let ((pos (or position
 		 (save-excursion
 		   (if (org-toc-before-first-heading-p)
-		       (progn (re-search-forward "^\\*+ " nil t)
+		       (progn (re-search-forward org-outline-regexp-bol nil t)
 			      (match-beginning 0))
 		     (point))))))
     (setq org-toc-cycle-global-status org-cycle-global-status)
@@ -239,11 +239,11 @@ specified, then make `org-toc-recenter' use this value."
     (let* ((beg (point-min))
 	   (end (and (re-search-forward "^\\*" nil t)
 		     (1- (match-beginning 0))))
-	   (ov (org-make-overlay beg end))
+	   (ov (make-overlay beg end))
 	   (help (format "Table of contents for %s (press ? for a quick help):\n"
 			 (buffer-name org-toc-base-buffer))))
-      (org-overlay-put ov 'invisible t)
-      (org-overlay-put ov 'before-string help))
+      (overlay-put ov 'invisible t)
+      (overlay-put ov 'before-string help))
     ;; build the browsable TOC
     (cond (depth
 	   (let* ((dpth (if org-toc-odd-levels-only
@@ -342,13 +342,13 @@ If DELETE is non-nil, delete other windows when in the Org buffer."
   "Toggle columns view in the Org buffer from Org TOC."
   (interactive)
   (let ((indirect-buffer (current-buffer)))
-    (switch-to-buffer org-toc-base-buffer)
+    (org-pop-to-buffer-same-window org-toc-base-buffer)
     (if (not org-toc-columns-shown)
 	(progn (org-columns)
 	       (setq org-toc-columns-shown t))
       (progn (org-columns-remove-overlays)
 	     (setq org-toc-columns-shown nil)))
-    (switch-to-buffer indirect-buffer)))
+    (org-pop-to-buffer-same-window indirect-buffer)))
 
 (defun org-toc-info ()
   "Show properties of current subtree in the echo-area."
@@ -356,7 +356,7 @@ If DELETE is non-nil, delete other windows when in the Org buffer."
   (let ((pos (point))
 	(indirect-buffer (current-buffer))
 	props prop msg)
-    (switch-to-buffer org-toc-base-buffer)
+    (org-pop-to-buffer-same-window org-toc-base-buffer)
     (goto-char pos)
     (setq props (org-entry-properties))
     (while (setq prop (pop props))
@@ -369,7 +369,7 @@ If DELETE is non-nil, delete other windows when in the Org buffer."
 	  (setq p (concat p ":"))
 	  (add-text-properties 0 (length p) '(face org-special-keyword) p)
 	  (setq msg (concat msg p " " v "  ")))))
-    (switch-to-buffer indirect-buffer)
+    (org-pop-to-buffer-same-window indirect-buffer)
     (message msg)))
 
 ;;; Store and restore TOC configuration:
@@ -416,17 +416,17 @@ current table of contents to it."
       (save-excursion
 	(goto-char (point-min))
 	(when (search-forward (car hlcfg0) nil t)
-	  (unless (org-overlays-at (match-beginning 0))
-	    (setq ov (org-make-overlay (match-beginning 0)
-				       (match-end 0))))
+	  (unless (overlays-at (match-beginning 0))
+	    (setq ov (make-overlay (match-beginning 0)
+				   (match-end 0))))
 	  (cond ((eq (cdr hlcfg0) 'children)
 		 (show-children)
 		 (message "CHILDREN")
-		 (org-overlay-put ov 'status 'children))
+		 (overlay-put ov 'status 'children))
 		((eq (cdr hlcfg0) 'branches)
 		 (show-branches)
 		 (message "BRANCHES")
-		 (org-overlay-put ov 'status 'branches))))))
+		 (overlay-put ov 'status 'branches))))))
     (goto-char pos)
     (if org-toc-follow-mode (org-toc-goto))
     (message "Last TOC configuration restored")
@@ -441,7 +441,7 @@ status."
       (goto-char (point-min))
       (while (and (not (eobp))
 		  (goto-char (next-overlay-change (point))))
-	(when (looking-at "^\\*+ ")
+	(when (looking-at org-outline-regexp-bol)
 	  (add-to-list
 	   'output
 	   (cons (buffer-substring-no-properties
