@@ -40,6 +40,7 @@
 (set-variable 'help-window-select t)
 (set-variable 'delete-by-moving-to-trash t)
 (show-paren-mode 1)
+(fset 'yes-or-no-p 'y-or-n-p)
 ;I added this, but it doesn't seem to be working...
 (set-variable 'dired-auto-revert-buffer t)
 (setq mouse-wheel-scroll-amount '(1))
