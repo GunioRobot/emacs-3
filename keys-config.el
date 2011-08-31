@@ -15,6 +15,10 @@
 (global-set-key [?\C-\M-o] 'org-mode)
 (global-set-key (kbd "C-c s") 'swap-windows)
 (global-set-key (kbd "C-~") 'toggle-truncate-lines)
+(global-set-key (kbd "s-t") '(lambda () (interactive) (ansi-term "/bin/bash")))
+(global-set-key (kbd "s-i") 'rename-buffer)
+
+
 
 (defun up-one ()
  "idea taken from Tom Laudeman"
