@@ -8,8 +8,8 @@
 (require 'zenburn)
 (require 'vivid-chalk)
 (require 'zen-and-art)
-;(zenburn)
-;(vivid-chalk)
+;(color-theme-zenburn)
+;(color-theme-vivid-chalk)
 (color-theme-zen-and-art)
 
 ;(setq-default show-trailing-whitespace t)
