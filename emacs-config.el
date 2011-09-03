@@ -46,6 +46,7 @@
 (set-variable 'dired-auto-revert-buffer t)
 (setq mouse-wheel-scroll-amount '(1))
 (setq mouse-wheel-progressive-speed nil)
+(winner-mode 1)
 
 ;Edit With Emacs Chrome extension
 (require 'edit-server)
