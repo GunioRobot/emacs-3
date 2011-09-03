@@ -14,6 +14,7 @@
 (add-to-list 'load-path (concat cjb-load-path "magit"))
 (add-to-list 'load-path (concat cjb-load-path "lilypond"))
 (add-to-list 'load-path (concat cjb-load-path "markdown"))
+(add-to-list 'load-path (concat cjb-load-path "multi-web-mode"))
 
 
 (provide 'load-path-config)

@@ -24,6 +24,7 @@
 (require 'abbrev-config)
 (require 'rainbow-mode)
 (require 'term-config)
+(require 'multi-web-config)
 
 ;minor behavior changes:
 (set-variable 'scroll-conservatively 5)
