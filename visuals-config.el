@@ -1,13 +1,17 @@
-;; cjb's custom visual configurations...zenburn you so sexy
 
 ;(scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-;(require 'zenburn)
-;(zenburn)
+
 (require 'color-theme)
+(color-theme-initialize)
+(require 'zenburn)
 (require 'vivid-chalk)
-(vivid-chalk)
+(require 'zen-and-art)
+;(zenburn)
+;(vivid-chalk)
+(color-theme-zen-and-art)
+
 ;(setq-default show-trailing-whitespace t)
 
 (set-default-font "-apple-consolas-medium-r-normal--18-0-72-72-m-0-iso10646-1")
@@ -20,7 +24,7 @@
 
 
 
-;highlight current line like a little bitch
+;highlight current line
 (global-hl-line-mode 1)
 (set-face-background 'hl-line "gray16")
 
