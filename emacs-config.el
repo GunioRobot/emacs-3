@@ -27,6 +27,7 @@
 (require 'multi-web-config)
 
 ;minor behavior changes:
+(setq-default indent-tabs-mode nil)
 (set-variable 'scroll-conservatively 5)
 (blink-cursor-mode -1)
 (set-variable 'initial-major-mode 'text-mode)
