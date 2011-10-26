@@ -63,4 +63,6 @@
 (add-hook 'shell-mode-hook 
           'ansi-color-for-comint-mode-on)
 
+(set-variable 'redisplay-dont-pause t)
+
 (provide 'visuals-config)
