@@ -17,7 +17,7 @@
 (global-set-key (kbd "C-~") 'toggle-truncate-lines)
 (global-set-key (kbd "s-t") '(lambda () (interactive) (ansi-term "/bin/bash")))
 (global-set-key (kbd "s-i") 'rename-buffer)
-
+(global-set-key (kbd "s-/") 'comment-region)
 
 
 (defun up-one ()
